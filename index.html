@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="style.css" rel="stylesheet" type="text/css">
+  <script src="./script.js" defer></script>
+  <title>Library</title>
+</head>
+
+<body>
+  
+  <div id="headerContainer">
+    <header>
+      <h1>My Library</h1>
+      <div>
+        <button id="logInButton">Log In</button>
+        <button id="createAccountButton">Create Account</button>
+      </div>
+    </header>
+  </div>
+
+  <main>
+    
+    <p>Add a book:</p>
+  
+
+  
+  <div id="formContainer">
+    <form action="script.js" method="post" id="form"></form>
+
+    <div>
+      <label for="bookTitle">Title:</label>
+      <input type="text" id="bookTitle" name="bookTitle">
+    </div>
+
+    <div>
+      <label for="bookAuthor">Author:</label>
+      <input type="text" id="bookAuthor" name="bookAuthor">
+    </div>
+
+    <div>
+      <label for="bookPageCount">Page Count:</label>
+      <input type="number" name="bookPageCount" id="bookPageCount">
+    </div>
+
+    <div>
+      <label for="bookStatus">Status:</label>
+      <select name="status" id="bookStatus">
+        <option value="notRead">Not Read</option>
+        <option value="read">Read</option>
+      </select>
+    </div>
+
+    <div>
+      <button type="submit">Submit</button>
+    </div>
+
+  </div>
+
+  </main>
+</body>
+</html>
