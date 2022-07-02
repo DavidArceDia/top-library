@@ -1,3 +1,4 @@
+/*
 let myLibrary = [
   {title: "book" , author: "book" , pageCount: "book" , status: "Read"}
 ];
@@ -22,6 +23,7 @@ const $bookbookStatus = document.querySelector('#bookbookStatus');
 console.log($bookTitle.value)
 
 
+*/
 
 
 
@@ -31,16 +33,26 @@ console.log($bookTitle.value)
 
 
 
+//Selectors
+const modalButton = document.getElementById("modalButton");
+const modal = document.getElementById("modal");
+const overlay = document.getElementById("overlay");
+const addBookButton = document.getElementById("addBookButton");
 
-
-const popUpButton = document.getElementById("popUpButton");
-const formPopUp = document.getElementById("formPopUp");
-const submitButtion = document.getElementById("addBookButton");
-
-popUpButton.addEventListener('click', () => {
-  formPopUp.classList.add('show');
+//Event Listeners
+modalButton.addEventListener('click', () => {
+  modal.classList.add('active');
+  overlay.classList.add('active');
 });
 
-submitButtion.addEventListener('click', () => {
-  formPopUp.classList.remove('show');
+
+overlay.addEventListener('click', () => {
+  modal.classList.remove('active');
+  overlay.classList.remove('active');
+})
+
+addBookButton.addEventListener('click', () => {
+  modal.classList.remove('active');
+  overlay.classList.remove('active');
 });
+//Functions

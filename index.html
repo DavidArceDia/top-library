@@ -24,40 +24,33 @@
 
   <main>
     
-    <button id="popUpButton">Add a book</button>
+    <button id="modalButton">
+      + Add a book      
+      <i class="fa-solid fa-plus-square fa-2xl"></i>
+    </button>
 
-  <div id="formPopUp">
-    <form action="script.js" method="post" id="form">
+    <div id="overlay"></div>
 
-    <div>
-      <label for="bookTitle">Title:</label>
-      <input type="text" id="bookTitle" name="bookTitle">
-    </div>
+      <div id="modal">
+        <label for="bookTitle">Title:</label>
+        <input type="text" id="bookTitle" name="bookTitle">
 
-    <div>
-      <label for="bookAuthor">Author:</label>
-      <input type="text" id="bookAuthor" name="bookAuthor">
-    </div>
+        <label for="bookAuthor">Author:</label>
+        <input type="text" id="bookAuthor" name="bookAuthor">
 
-    <div>
-      <label for="bookPageCount">Page Count:</label>
-      <input type="number" name="bookPageCount" id="bookPageCount">
-    </div>
+        <label for="bookPageCount">Page Count:</label>
+        <input type="number" name="bookPageCount" id="bookPageCount">
 
-    <div>
-      <label for="bookStatus">Status:</label>
-      <select name="status" id="bookStatus">
-        <option value="notRead">Not Read</option>
-        <option value="read">Read</option>
-      </select>
-    </div>
+        <label for="bookStatus">Status:</label>
+        <select name="status" id="bookStatus">
+          <option value="notRead">Not Read</option>
+          <option value="read">Read</option>
+        </select>
 
-    <div>
-      <button id="addBookButton" type="submit">Add Book</button>
-    </div>
+        <button id="addBookButton">Add Book</button>
+      </div>
+        
 
-  </form>
-  </div>
 
   </main>
 </body>
