@@ -11,7 +11,6 @@
 </head>
 
 <body>
-  
   <div id="headerContainer">
     <header>
       <h1>My Library</h1>
@@ -32,22 +31,25 @@
     <div id="overlay"></div>
 
       <div id="modal">
-        <label for="bookTitle">Title:</label>
-        <input type="text" id="bookTitle" name="bookTitle">
+        <form action="">
+          <label for="title">Title:</label>
+          <input type="text" id="title" name="title">
 
-        <label for="bookAuthor">Author:</label>
-        <input type="text" id="bookAuthor" name="bookAuthor">
+          <label for="author">Author:</label>
+          <input type="text" id="author" name="author">
 
-        <label for="bookPageCount">Page Count:</label>
-        <input type="number" name="bookPageCount" id="bookPageCount">
+          <label for="pageCount">Page Count:</label>
+          <input type="number" name="pageCount" id="pageCount">
 
-        <label for="bookStatus">Status:</label>
-        <select name="status" id="bookStatus">
-          <option value="notRead">Not Read</option>
-          <option value="read">Read</option>
-        </select>
+          <label for="readStatus">Status:</label>
+          <select name="readStatus" id="readStatus">
+            <option value="notRead">Not Read</option>
+            <option value="read">Read</option>
+          </select>
 
-        <button id="addBookButton">Add Book</button>
+          <button id="addBookButton">Add Book</button>
+        </form>
+
       </div>
         
 

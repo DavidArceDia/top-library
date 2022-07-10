@@ -113,18 +113,26 @@ button {
   border-radius: 20px;
   height: 25rem;
   width: 20rem;
-  padding: 1rem;
+  
 
-  display: flex;
-  flex-direction: column;
+  
 
-  justify-content: space-around;
+  
   position: fixed; 
   left: calc(50vw - 11rem); 
   top: calc(50vh - 13rem);
 
   visibility: hidden;
   opacity: 0;
+}
+
+form {
+  height: 25rem;
+  width: 20rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 #modal.active {
@@ -169,7 +177,7 @@ select:focus {
   outline: 2px solid rgb(35, 160, 237);
 }
 
-#bookStatus {
+#readStatus {
   width: 19.7rem;
 }
 
